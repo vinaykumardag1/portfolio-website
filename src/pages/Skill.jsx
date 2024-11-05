@@ -44,7 +44,7 @@ const Skills = () => {
     </div>
     <div className='flex'>
       {skills_icons.map((item)=>(
-        <div key={item.id} className='py-4 flex flex-col px-2 border border-light-500'>
+        <div key={item.id} className='py-4 flex flex-row md:flex-col px-2 border border-light-500'>
           <img src={item.icon} alt="" className='py-2 grayscale transition-all  duration-100 hover:grayscale-0'/>
           <p className='text-center'>{item.per}</p>
         </div>
@@ -52,7 +52,7 @@ const Skills = () => {
     </div>
    
     <p className='text-3xl font-bold text-center pb-20'>RESUME</p>
-      <div className='grid grid-cols-2'>
+      <div className='grid grid-cols-1 md:grid-cols-2'>
         <div>       
            <Edu_intern/></div>
         <div className='bg-[#042f2e] p-7 m-11 rounded-3xl text-white'>
