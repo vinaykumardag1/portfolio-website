@@ -42,9 +42,9 @@ const Skills = () => {
       <h4 className='text-3xl text-center font-bold'>MY SKILLS</h4> 
       <p className='text-sm text-center mt-3'>Showcasing my Skills and ongoing initiatives, highlighting <br/> innovation and dedication."</p>       
     </div>
-    <div className='flex flex-col md:flex-row'>
+    <div className='flex gap-5 flex-col md:flex-row'>
       {skills_icons.map((item)=>(
-        <div key={item.id} className='py-4 flex flex-col px-2 border border-light-500'>
+        <div key={item.id} className='py-4 flex  flex-col px-2 border  border-light-500 rounded-3xl'>
           <img src={item.icon} alt="" className='py-2 grayscale transition-all  duration-100 hover:grayscale-0'/>
           <p className='text-center'>{item.per}</p>
         </div>
