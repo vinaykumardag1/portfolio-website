@@ -7,7 +7,7 @@ import Project from './pages/Project'
 import Contact from './pages/Contact'
 const App = () => {
   return (
-    <div className='container mx-3 md:mx-24'>
+    <div className='container mx-0 md:mx-24'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Banner/>}/>
