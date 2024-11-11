@@ -42,19 +42,20 @@ const Skills = () => {
       <h4 className='text-3xl text-center font-bold'>MY SKILLS</h4> 
       <p className='text-sm text-center mt-3'>Showcasing my Skills and ongoing initiatives, highlighting <br/> innovation and dedication."</p>       
     </div>
-    <div className='flex'>
+    <div className='flex flex-col md:flex-row'>
       {skills_icons.map((item)=>(
-        <div key={item.id} className='py-4 flex flex-row md:flex-col px-2 border border-light-500'>
+        <div key={item.id} className='py-4 flex flex-col px-2 border border-light-500'>
           <img src={item.icon} alt="" className='py-2 grayscale transition-all  duration-100 hover:grayscale-0'/>
           <p className='text-center'>{item.per}</p>
         </div>
       ))}
     </div>
    
-    <p className='text-3xl font-bold text-center pb-20'>RESUME</p>
+    <p className='text-3xl font-bold text-center py-20'>RESUME</p>
       <div className='grid grid-cols-1 md:grid-cols-2'>
         <div>       
-           <Edu_intern/></div>
+           <Edu_intern/>
+        </div>
         <div className='bg-[#042f2e] p-7 m-11 rounded-3xl text-white'>
          <p className='flex text-3xl justify-center'><img src={acheivement_icon} alt="" /> Acheivments</p>
           <Achivement/>

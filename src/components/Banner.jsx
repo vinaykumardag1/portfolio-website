@@ -2,8 +2,8 @@ import React from 'react'
 import banner_image from '../assets/portfolio.png' 
 const Banner = () => {
   return (
-    <div className='flex flex-col-reverse  md:grid grid-cols-2 md:px-10 py-5'>
-      <div className='flex justify-center  items-center'>
+    <div className='flex flex-col-reverse  md:grid grid-cols-2 place-items-center md:px-10 py-10'>
+      <div className='flex justify-center items-center'>
         <div className='w-2/3 pt-10'>
         <p className='text-xl '>Hello ,</p>
         <h2 className='text-4xl font-bold py-3'>I AM VINAY</h2>

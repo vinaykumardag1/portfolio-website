@@ -67,7 +67,7 @@ const Project = () => {
       </div>
       <p className='text-center py-9 text-3xl'>HTML/CSS</p>
     <div className='flex justify-center'>
-        <Carousel  className='w-1/2'>
+        <Carousel  className='w-full md:w-1/2'>
             <CarouselContent >
             {project_data.map((item)=>(
             
@@ -77,8 +77,10 @@ const Project = () => {
 
             ))}   
             </CarouselContent>
-            <CarouselNext/>
-            <CarouselPrevious/>
+          
+            <CarouselNext className='hidden md:flex'/>
+            <CarouselPrevious className='hidden md:flex'/>
+            
         </Carousel>
        
       
@@ -86,7 +88,7 @@ const Project = () => {
     <div>
      <p className='text-center py-10 text-3xl'>React Projects</p>
      <div className='flex justify-center'>
-     <Carousel className='w-1/2'>
+     <Carousel className='w-full md:w-1/2'>
             <CarouselContent>
             {ReactProject.map((item)=>(
             
@@ -96,13 +98,16 @@ const Project = () => {
 
             ))}   
             </CarouselContent>
-            <CarouselNext/>
-            <CarouselPrevious/>
+          
+            <CarouselNext className='hidden md:flex' />
+            <CarouselPrevious className='hidden md:flex' />
+            
         </Carousel>
         </div>
     </div>
     </div>
   )
 }
+
 
 export default Project
