@@ -1,7 +1,11 @@
 import React from 'react'
 import banner_image from '../assets/portfolio.png' 
+import Skills from '@/pages/Skill'
+import Project from '@/pages/Project'
+import Contact from '@/pages/Contact'
 const Banner = () => {
   return (
+    <>
     <div className='flex flex-col-reverse  md:grid grid-cols-2 place-items-center md:px-10 py-10'>
       <div className='flex justify-center items-center'>
         <div className='w-2/3 pt-10'>
@@ -15,6 +19,10 @@ const Banner = () => {
         <img src={banner_image} alt="my image protrait image " className="w-2/3 rounded-3xl overflow-hidden"  />
       </div>
     </div>
+    <Skills/>
+      <Project/>
+      <Contact/>
+     </>
   )
 }
 
