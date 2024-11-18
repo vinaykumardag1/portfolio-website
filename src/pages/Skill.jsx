@@ -10,7 +10,7 @@ import cap_icon from '../assets/skills_icon/cap_icon.svg'
 import work_experice from '../assets/skills_icon/work_xperience.svg'
 import acheivement_icon from '../assets/skills_icon/achivement-icon.svg'
 import download_icon from '../assets/skills_icon/download-icon.svg'
-import resume from '../assets/skills_icon/resume.pdf'
+import resume from '../assets/skills_icon/Daggupati_vinay_fullstack.pdf'
 
 
 const Skills = () => {
