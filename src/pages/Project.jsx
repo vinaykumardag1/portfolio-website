@@ -8,6 +8,8 @@ import movie_app from '../assets/project_images/movie_app.jpeg'
 import netflix_clone from '../assets/project_images/Netflix_clone.jpeg'
 import music_player from '../assets/project_images/music_player.jpeg'
 
+// 
+import Websitehub from '../assets/project_images/websitehub.png'
 
 import { Carousel,CarouselContent,CarouselNext,CarouselPrevious,CarouselItem } from '@/components/ui/carousel'
 import Card from '@/components/Card'
@@ -59,6 +61,15 @@ const Project = () => {
           link:'https://music-player-topaz-tau.vercel.app/'
         }
       ]
+      const mern_projects=[
+        {
+          id:1,
+          image: Websitehub,
+          title:'Websitehub',
+          about:'WebsiteHub is a platform that categorizes top websites across various domains, including education, government, and technology. Each listing provides the websites name, URL, and a brief description, facilitating easy access to valuable online resources. The platform is built using technologies such as Node.js, Express.js, and MongoDB, ensuring a robust and efficient user experience. For more details, you can visit the projects GitHub repository.',
+          link:'https://websitehub.vercel.app',
+        }
+      ]
   return (
     <div>
      <div className='text-center py-8'>
@@ -85,6 +96,7 @@ const Project = () => {
        
       
     </div>
+    {/*  */}
     <div>
      <p className='text-center py-10 text-3xl'>React Projects</p>
      <div className='flex justify-center'>
@@ -105,6 +117,28 @@ const Project = () => {
         </Carousel>
         </div>
     </div>
+    {/*  */}
+    <div>
+     <p className='text-center py-10 text-3xl'>MERN/NODEJS Projects</p>
+     <div className='flex justify-center'>
+     <Carousel className='w-full md:w-1/2'>
+            <CarouselContent>
+            {mern_projects.map((item)=>(
+            
+            <CarouselItem  key={item.id}>
+            <Card item={item}/>
+            </CarouselItem> 
+
+            ))}   
+            </CarouselContent>
+          
+            <CarouselNext className='hidden md:flex' />
+            <CarouselPrevious className='hidden md:flex' />
+            
+        </Carousel>
+        </div>
+    </div>
+    
     </div>
   )
 }
